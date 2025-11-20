@@ -1,1 +1,474 @@
-eval(atob("CgkKICAkKHdpbmRvdykub24oJ2xvYWQnLCBmdW5jdGlvbiAoKSB7CiAgCQkkKGZ1bmN0aW9uICgpIHsKCSAgCQkkKCdbZGF0YS10b2dnbGU9InRvb2x0aXAiXScpLnRvb2x0aXAoKTsKICAgICAgIAoJCQkgCgkJfSk7CgkJCQkvLyBUcmVldmlldyBJbml0aWFsaXphdGlvbgoJCSQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCkgewogICAgICAKCQkvLyAgZ2V0X3BvdGVuc2lfa2VjYW1hdGFuKCk7CiAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cFBlbmVyaW1hYW4iKS5zdHlsZS5kaXNwbGF5ID0gIm5vbmUiOwkKCQkgICQoJy50cmVldmlldy1hbmltYXRlZCcpLm1kYlRyZWV2aWV3KCk7CgkJIAoJCX0pOwoKCX0pOwoKCgkkKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbiAoKSB7CiAgICAKICAgICBnZXRfcG90ZW5zaV9rZWNhbWF0YW4oKTsKICAgICAgJChmdW5jdGlvbigpewoJCQkJCSQoIiNzdGFydF9kYXRlIikuZGF0ZXBpY2tlcih7CgkJCQkJCWZvcm1hdDogImRkLW1tLXl5eXkiLCAgIAoJCQkJCQlhdXRvY2xvc2U6IHRydWUKCQkJCQl9KTsKCQkJCX0pOwoKCQkJCSQoZnVuY3Rpb24oKXsKCQkJCQkkKCIjZW5kX2RhdGUiKS5kYXRlcGlja2VyKHsKCQkJCQkJZm9ybWF0OiAiZGQtbW0teXl5eSIsICAgCgkJCQkJCWF1dG9jbG9zZTogdHJ1ZQoJCQkJCX0pOwoJCQkJfSk7CgoKCX0pOwkKCgogICBmdW5jdGlvbiBzaG93UG9wdXBLZWNhbWF0YW4oa2VjKSB7CgogICAgICAkLmFqYXgoewogICAgICAgIHVybDogJ21hc3Rlci1ta2VjYW1hdGFuLWdldC8nICsgZW5jb2RlVVJJQ29tcG9uZW50KGtlYyksCiAgICAgICAgdHlwZTogJ1BPU1QnLAogICAgICAgIGRhdGFUeXBlOiAianNvbiIsCiAgICAgICAgc3VjY2VzczogZnVuY3Rpb24oZGF0YSl7CiAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBJbWFnZSIpLnNyYyA9ICJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LCIgKyBkYXRhLmZvdG87CiAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBOYW1hIikuaW5uZXJUZXh0ICAgPSAiS0VDQU1BVEFOICIrZGF0YS5ubV9rZWNhbWF0YW47CiAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBBbGFtYXQiKS5pbm5lclRleHQgPSBkYXRhLmFsYW1hdDsKICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cFRlbHAiKS5pbm5lclRleHQgICA9IGRhdGEudGVscDsKICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cEtka2VjIikuaW5uZXJUZXh0ICAgPSBkYXRhLmtkX2tlY2FtYXRhbjsKICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cEtlY2FtYXRhbiIpLnN0eWxlLmRpc3BsYXkgPSAiZmxleCI7CgoKICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJkYXRhSW1hZ2UiKS5zcmMgPSAiZGF0YTppbWFnZS9qcGVnO2Jhc2U2NCwiICsgZGF0YS5mb3RvOwogICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRhdGFOYW1hIikuaW5uZXJUZXh0ICAgPSAiS0VDQU1BVEFOICIrZGF0YS5ubV9rZWNhbWF0YW47CiAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGF0YUFsYW1hdCIpLmlubmVyVGV4dCA9IGRhdGEuYWxhbWF0OwogICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRhdGFUZWxwIikuaW5uZXJUZXh0ICAgPSBkYXRhLnRlbHA7CiAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGF0YUtka2VjIikuaW5uZXJUZXh0ICAgPSBkYXRhLmtkX2tlY2FtYXRhbjsKICAgICAgICAgCgoKICAgICAgICB9LAogICAgICAgIGVycm9yOiBmdW5jdGlvbih4aHIpewogICAgICAgICAgY29uc29sZS5lcnJvcih4aHIucmVzcG9uc2VUZXh0KTsKICAgICAgICB9CiAgICAgIH0pOwoKICAgIH0KCiAgICAKCiAgICBmdW5jdGlvbiBjbG9zZVBvcHVwKCkgewogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBLZWNhbWF0YW4iKS5zdHlsZS5kaXNwbGF5ID0gIm5vbmUiOwogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBQZW5lcmltYWFuIikuc3R5bGUuZGlzcGxheSA9ICJub25lIjsKCiAgICB9CgogICAgZnVuY3Rpb24gc2hvd1BlcmlvZGUoKSB7CiAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cEtlY2FtYXRhbiIpLnN0eWxlLmRpc3BsYXkgPSAibm9uZSI7CiAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cFBlbmVyaW1hYW4iKS5zdHlsZS5kaXNwbGF5ID0gImZsZXgiOwoKCiAgICB9CgoKCgpmdW5jdGlvbiBnZXRfcG90ZW5zaV9rZWNhbWF0YW4oKSB7CiAgICB2YXIgZWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBLZGtlYyIpLmlubmVyVGV4dDsKICAgIHZhciBubWtlYyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cE5hbWEiKS5pbm5lclRleHQ7CiAgICAgIG5ta2VjID0gbm1rZWMKICAgICAgICAudG9Mb3dlckNhc2UoKQogICAgICAgIC5yZXBsYWNlKC9cYlx3L2csIGZ1bmN0aW9uKGwpIHsgcmV0dXJuIGwudG9VcHBlckNhc2UoKTsgfSk7CgogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibGJwYW5lbCIpLmlubmVyVGV4dCA9ICJQb3RlbnNpIFdhamliIFBhamFrIjsgIAogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicG9wdXBOYW1hIikuaW5uZXJUZXh0ID0gbm1rZWM7CiAgICAgIC8vICQoJyNsb2FkaW5nLXNwaW5uZXItcG9wdXAnKS5zaG93KCk7CgogICAgICBpZiAoZWwgIT09JycpewogICAgICAgICAgdmFyIGtlYyA9IGVsLnNsaWNlKC0zKTsKICAgICAgICAgIHZhciBubWtlYz1ubWtlYzsKICAgICAgICAgICQoJyNkaXYtZGF0YS1rZWNhbWF0YW4nKS5zaG93KCk7CiAgICAgICAgICAkKCcjZGl2LXRhYmxlLWtlY2FtYXRhbicpLmhpZGUoKTsKICAgICAgfWVsc2V7CiAgICAgICAgICBrZWMgPSAnMDAwJzsKICAgICAgICAgIG5ta2VjID0nJzsKICAgICAgICAgICQoJyNkaXYtZGF0YS1rZWNhbWF0YW4nKS5oaWRlKCk7CiAgICAgICAgICAkKCcjZGl2LXRhYmxlLWtlY2FtYXRhbicpLnNob3coKTsKICAgICAgfQogICAgCiAgICAkKCcjbG9hZGluZy1zcGlubmVyJykuc2hvdygpOwogICAgJCgnI2NvbnRhaW5lci1wb3RlbnNpJykuZW1wdHkoKTsKCgogICAgaWYoa2VjPT0nMDAwJyl7CiAgICAgIGluc3RhbnNpPSdLRUNBTUFUQU4nOwogICAgfWVsc2V7CiAgICAgIGluc3RhbnNpPSdLRUxVUkFIQU4nOwogICAgfQoKIAogICAgICAkLmFqYXgoewogICAgICAgIHVybDogJ2NoYXJ0LXBvdGVuc2kvZ2V0LycgKyBlbmNvZGVVUklDb21wb25lbnQoa2VjKSwKICAgICAgICB0eXBlOiAnUE9TVCcsCiAgICAgICAgc3VjY2VzczogZnVuY3Rpb24gKGRhdGEpIHsKICAgICAgICAgICAgdmFyIG91dCAgICAgICA9IGpRdWVyeS5wYXJzZUpTT04oZGF0YSk7CiAgICAgICAgICAgIHZhciBuYW1hR3JvdXAgPSBvdXQuZ3JvdXA7CiAgICAgICAgICAgIHZhciBwcm9ncmVzICAgPSBvdXQucG90ZW5zaTsKCiAgICAgICAgICAgIHZhciBwaWVEYXRhID0gW107CiAgICAgICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgbmFtYUdyb3VwLmxlbmd0aDsgaSsrKSB7CiAgICAgICAgICAgICAgICBwaWVEYXRhLnB1c2goewogICAgICAgICAgICAgICAgICAgIG5hbWU6IG5hbWFHcm91cFtpXSwKICAgICAgICAgICAgICAgICAgICB5OiBwYXJzZUZsb2F0KHByb2dyZXNbaV0pIHx8IDAKICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICB9CgogICAgICAgICAgICBIaWdoY2hhcnRzLnNldE9wdGlvbnMoewogICAgICAgICAgICAgICAgY29sb3JzOiBbJyMxZjc3YjQnLCAnIzJjYTAyYycsICcjZmY3ZjBlJywgJyNkNjI3MjgnLAogICAgICAgICAgICAgICAgICAgICAgICAnIzk0NjdiZCcsICcjOGM1NjRiJywgJyNlMzc3YzInLCAnIzdmN2Y3ZicsCiAgICAgICAgICAgICAgICAgICAgICAgICcjYmNiZDIyJywgJyMxN2JlY2YnXQogICAgICAgICAgICB9KTsKICAgICAgICAgICAgdmFyIGluc3RhbnNpRm9ybWF0dGVkID0gaW5zdGFuc2kuY2hhckF0KDApLnRvVXBwZXJDYXNlKCkgKyBpbnN0YW5zaS5zbGljZSgxKS50b0xvd2VyQ2FzZSgpOwoKICAgICAgICAgICAgICAgIEhpZ2hjaGFydHMuY2hhcnQoJ2NvbnRhaW5lci1wb3RlbnNpJywgewogICAgICAgICAgICAgICAgICAgIGNoYXJ0OiB7IAogICAgICAgICAgICAgICAgICAgICAgICB0eXBlOiAncGllJywKICAgICAgICAgICAgICAgICAgICAgICAgZXZlbnRzOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZW5kZXI6IGZ1bmN0aW9uICgpIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgY2hhcnQgPSB0aGlzOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciB0b3RhbCA9IHBpZURhdGEucmVkdWNlKChzdW0sIGl0ZW0pID0+IHN1bSArIGl0ZW0ueSwgMCk7CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIEhhcHVzIGxhYmVsIGxhbWEga2FsYXUgYWRhCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGNoYXJ0LmN1c3RvbUxhYmVsKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNoYXJ0LmN1c3RvbUxhYmVsLmRlc3Ryb3koKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIFRhbWJhaGthbiBsYWJlbCBkaSB0ZW5nYWggZG9uYXQKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjaGFydC5jdXN0b21MYWJlbCA9IGNoYXJ0LnJlbmRlcmVyLnRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOmNlbnRlcjsiPicgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJzxzcGFuIHN0eWxlPSJmb250LXNpemU6MTJweDsgY29sb3I6I2YyMmY0MjsiPlRvdGFsPC9zcGFuPjxicj4nICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICc8c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHg7IGZvbnQtd2VpZ2h0OmJvbGQ7IGNvbG9yOiMwMDgwOUQ7Ij4nICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEhpZ2hjaGFydHMubnVtYmVyRm9ybWF0KHRvdGFsLCAwLCAnLCcsICcuJykgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJzwvc3Bhbj4nICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJzwvZGl2PicsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNoYXJ0LnBsb3RMZWZ0ICsgY2hhcnQucGxvdFdpZHRoIC8gMiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2hhcnQucGxvdFRvcCArIGNoYXJ0LnBsb3RIZWlnaHQgLyAyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5hdHRyKHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYWxpZ246ICdjZW50ZXInLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB6SW5kZXg6IDUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVzZUhUTUw6IHRydWUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5hZGQoKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgdGl0bGU6IHsgCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQ6IG5ta2VjICsgJzxicj5Qb3RlbnNpIFdhamliIFBhamFrICcgKyBpbnN0YW5zaUZvcm1hdHRlZCwgCiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZTogJzE2cHgnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFdlaWdodDogJ2JvbGQnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICcjMDA4MDlEJwogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICB0b29sdGlwOiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHBvaW50Rm9ybWF0OiAne3BvaW50LnBlcmNlbnRhZ2U6LjFmfSUgKHtwb2ludC55fSknCiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICBhY2Nlc3NpYmlsaXR5OiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHBvaW50OiB7IHZhbHVlU3VmZml4OiAnJScgfQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgcGxvdE9wdGlvbnM6IHsKICAgICAgICAgICAgICAgICAgICAgICAgcGllOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBhbGxvd1BvaW50U2VsZWN0OiB0cnVlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY3Vyc29yOiAncG9pbnRlcicsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpbm5lclNpemU6ICc1NSUnLCAvLyBkb25hdCBsZWJpaCB0ZWJhbAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZGF0YUxhYmVsczogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVuYWJsZWQ6IHRydWUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9ybWF0OiAne3BvaW50Lm5hbWV9OiB7cG9pbnQucGVyY2VudGFnZTouMWZ9JScKICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgY3JlZGl0czogeyBlbmFibGVkOiBmYWxzZSB9LAogICAgICAgICAgICAgICAgICAgIHNlcmllczogW3sKICAgICAgICAgICAgICAgICAgICAgICAgbmFtZTogJ1BPVEVOU0kgV0FKSUIgUEFKQUsnLAogICAgICAgICAgICAgICAgICAgICAgICBjb2xvckJ5UG9pbnQ6IHRydWUsCiAgICAgICAgICAgICAgICAgICAgICAgIGRhdGE6IHBpZURhdGEKICAgICAgICAgICAgICAgICAgICB9XQogICAgICAgICAgICAgICAgfSk7CgoKCiAgICAgICAgICAgIC8vIFRhbXBpbGthbiBsaXN0IGtlY2FtYXRhbiArIGp1bWxhaCBwb3RlbnNpCiAgICAgICAgICAgIHZhciBodG1sTGlzdCA9ICI8dGFibGU+IjsKICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0aGVhZCA+PHRyPjx0aD4iK2luc3RhbnNpKyIgPC90aD48dGggc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+UE9URU5TSTwvdGg+PC90cj48L3RoZWFkPjx0Ym9keT4iOwogICAgICAgICAgICBsZXQgdG90YWxQcm9ncmVzID0gMDsKICAgICAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBuYW1hR3JvdXAubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgbGV0IHByb2dyZXNWYWwgPSBwcm9ncmVzW2ldIHx8IDA7CiAgICAgICAgICAgICAgICAgIHRvdGFsUHJvZ3JlcyArPSBwcm9ncmVzVmFsOwoKICAgICAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8dHI+IjsKICAgICAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8dGQ+IiArIGNhcGl0YWxpemVXb3JkcyhpbnN0YW5zaSkrIiAiICtjYXBpdGFsaXplV29yZHMobmFtYUdyb3VwW2ldKSArICI8L3RkPiI7CiAgICAgICAgICAgICAgICBodG1sTGlzdCArPSAiPHRkIGNsYXNzPSdudW0nPiIgKyAgKCAocHJvZ3Jlc1tpXSB8fCAwKS50b0xvY2FsZVN0cmluZygnaWQtSUQnKSApICArICI8L3RkPiI7CiAgICAgICAgICAgICAgICBodG1sTGlzdCArPSAiPC90cj4iOwoKICAgICAgICAgICAgICAgIAogICAgICAgICAgICB9CgogICAgICAgICAvLyAgIFRhbWJhaGthbiBiYXJpcyB0b3RhbAogICAgICAgICAgICBodG1sTGlzdCArPSAiPHRyIHN0eWxlPSdmb250LXdlaWdodDpib2xkOyBiYWNrZ3JvdW5kOiNkOGEyNWU7Jz4iOwogICAgICAgICAgICBodG1sTGlzdCArPSAiPHRkIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPjxiPlRPVEFMPC9iPjwvdGQ+IjsKICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0ZCBjbGFzcz0nbnVtJyBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48Yj4iICsgdG90YWxQcm9ncmVzLnRvTG9jYWxlU3RyaW5nKCdpZC1JRCcpICsgIjwvYj48L3RkPiI7CiAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8L3RyPiI7ICAgICAgICAgICAgCgogICAgICAgICAgICBodG1sTGlzdCArPSAiPC90Ym9keT48L3RhYmxlPiI7CiAgICAgICAgICAgICQoJyNsaXN0LXBvdGVuc2knKS5odG1sKGh0bWxMaXN0KTsKCgogICAgICAgIH0sCiAgICAgICAgY29tcGxldGU6IGZ1bmN0aW9uICgpIHsKICAgICAgICAgICAKICAgICAgICAgICAgJCgnI2xvYWRpbmctc3Bpbm5lcicpLmhpZGUoKTsKICAgICAgICAgICAgY2xvc2VQb3B1cCgpOwogICAgICAgICAgICBnZXRfZWZla3Rpdml0YXMoKTsKCiAgICAgICAgfSwKICAgICAgICBlcnJvcjogZnVuY3Rpb24gKCkgewogICAgICAgICAgICAkKCcjY29udGFpbmVyLXBvdGVuc2knKS5odG1sKCI8cCBzdHlsZT0nY29sb3I6cmVkO3RleHQtYWxpZ246Y2VudGVyOyc+R2FnYWwgbWVtdWF0IGRhdGE8L3A+Iik7CiAgICAgICAgfQogICAgfSk7Cn0KCmZ1bmN0aW9uIGZvcm1hdFRvWU1EKGRhdGVTdHIpIHsKICBjb25zdCBwYXJ0cyA9IGRhdGVTdHIuc3BsaXQoJy0nKTsgCiAgY29uc3QgZCA9IG5ldyBEYXRlKHBhcnRzWzJdLCBwYXJ0c1sxXSAtIDEsIHBhcnRzWzBdKTsgLy8gKFksIE0tMSwgRCkKCiAgY29uc3QgeWVhciA9IGQuZ2V0RnVsbFllYXIoKTsKICBjb25zdCBtb250aCA9IFN0cmluZyhkLmdldE1vbnRoKCkgKyAxKS5wYWRTdGFydCgyLCAnMCcpOwogIGNvbnN0IGRheSA9IFN0cmluZyhkLmdldERhdGUoKSkucGFkU3RhcnQoMiwgJzAnKTsKCiAgcmV0dXJuIGAke3llYXJ9LSR7bW9udGh9LSR7ZGF5fWA7Cn0KCgoKZnVuY3Rpb24gZ2V0X3BlbmVyaW1hYW5fa2VjYW1hdGFuKCkgewogICAgY29uc3QgX3N0YXJ0RGF0ZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdzdGFydF9kYXRlJykudmFsdWU7CiAgICBjb25zdCBfZW5kRGF0ZSAgID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2VuZF9kYXRlJykudmFsdWU7CiAgICBjb25zdCBzdGFydERhdGUgID0gZm9ybWF0VG9ZTUQoX3N0YXJ0RGF0ZSk7CiAgICBjb25zdCBlbmREYXRlICAgID0gZm9ybWF0VG9ZTUQoX2VuZERhdGUpOwoKICAgIGxldCBlbCAgICA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cEtka2VjIikuaW5uZXJUZXh0IHx8ICIiOwogICAgbGV0IG5ta2VjID0gKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwb3B1cE5hbWEiKS5pbm5lclRleHQgfHwgIiIpCiAgICAgICAgLnRvTG93ZXJDYXNlKCkKICAgICAgICAucmVwbGFjZSgvXGJcdy9nLCBsID0+IGwudG9VcHBlckNhc2UoKSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibGJwYW5lbCIpLmlubmVyVGV4dCA9ICJSZWFsaXNhc2kgUGVuZXJpbWFhbiBQYWphayI7IAogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInBvcHVwTmFtYSIpLmlubmVyVGV4dCA9IG5ta2VjOwoKICAgIGxldCBrZWMgPSAiMDAwIjsKICAgIGlmIChlbC50cmltKCkgIT09ICIiICYmIGVsLmxlbmd0aCA+PSAzKSB7CiAgICAgICAga2VjID0gZWwuc2xpY2UoLTMpOwogICAgICAgICQoJyNkaXYtZGF0YS1rZWNhbWF0YW4nKS5zaG93KCk7CiAgICAgICAgJCgnI2Rpdi10YWJsZS1rZWNhbWF0YW4nKS5oaWRlKCk7CiAgICB9IGVsc2UgewogICAgICAgIG5ta2VjID0gIiI7CiAgICAgICAgJCgnI2Rpdi1kYXRhLWtlY2FtYXRhbicpLmhpZGUoKTsKICAgICAgICAkKCcjZGl2LXRhYmxlLWtlY2FtYXRhbicpLnNob3coKTsKICAgIH0KCiAgICAkKCcjbG9hZGluZy1zcGlubmVyJykuc2hvdygpOwogICAgJCgnI2NvbnRhaW5lci1wb3RlbnNpJykuZW1wdHkoKTsKCiAgICBjb25zdCBpbnN0YW5zaSAgPSAoa2VjID09PSAiMDAwIikgPyAiS0VDQU1BVEFOIiA6ICJLRUxVUkFIQU4iOwogICAgY29uc3QgdGlwZUNoYXJ0ID0gJ2NvbHVtbic7CgogICAgJC5hamF4KHsKICAgICAgICB1cmw6ICdjaGFydC1wZW5lcmltYWFuL2dldC8nICsgZW5jb2RlVVJJQ29tcG9uZW50KGtlYyksCiAgICAgICAgdHlwZTogJ1BPU1QnLAogICAgICAgIGRhdGE6IHsgc3RhcnREYXRlLCBlbmREYXRlIH0sCiAgICAgICAgc3VjY2VzczogZnVuY3Rpb24gKGRhdGEpIHsKICAgICAgICAgICAgbGV0IG91dCA9IHt9OwogICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgb3V0ID0galF1ZXJ5LnBhcnNlSlNPTihkYXRhKSB8fCB7fTsKICAgICAgICAgICAgfSBjYXRjaCAoZSkgewogICAgICAgICAgICAgICAgY29uc29sZS5lcnJvcignSlNPTiBwYXJzZSBlcnJvcjonLCBlLCBkYXRhKTsKICAgICAgICAgICAgICAgICQoJyNjb250YWluZXItcG90ZW5zaScpLmh0bWwoIjxwIHN0eWxlPSdjb2xvcjpyZWQ7dGV4dC1hbGlnbjpjZW50ZXI7Jz5EYXRhIHRpZGFrIERpdGVtdWthbjwvcD4iKTsKICAgICAgICAgICAgICAgIHJldHVybjsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgY29uc3QgbmFtYUdyb3VwID0gb3V0Lmdyb3VwIHx8IFtdOwogICAgICAgICAgICBjb25zdCBwb2tvayAgICAgPSAob3V0LnBva29rIHx8IFtdKS5tYXAodiA9PiB2IHx8IDApOwogICAgICAgICAgICBjb25zdCBkZW5kYSAgICAgPSAob3V0LmRlbmRhIHx8IFtdKS5tYXAodiA9PiB2IHx8IDApOwoKICAgICAgICAgICAgaWYgKCFuYW1hR3JvdXAubGVuZ3RoKSB7CiAgICAgICAgICAgICAgICAkKCcjY29udGFpbmVyLXBvdGVuc2knKS5odG1sKGAKICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhbGVydCBhbGVydC1pbmZvIGFsZXJ0LWRpc21pc3NpYmxlIiByb2xlPSJhbGVydCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzcz0iY2xvc2UiIGRhdGEtZGlzbWlzcz0iYWxlcnQiIGFyaWEtbGFiZWw9IkNsb3NlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGFyaWEtaGlkZGVuPSJ0cnVlIj4mdGltZXM7PC9zcGFuPgogICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgICAgICAgPGNlbnRlcj48Yj5JbmZvcm1hc2k8L2I+IFRpZGFrIGRpdGVtdWthbiBkYXRhIHVudHVrIHBlcmlvZGUgaW5pPC9jZW50ZXI+CiAgICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICBgKTsKICAgICAgICAgICAgICAgIHJldHVybjsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgY29uc3QgY2p1ZHVsID0gKGtlYyA9PT0gJzAwMCcpIAogICAgICAgICAgICAgICAgPyBgUGVuZXJpbWFhbiBwYWphayBwZXIga2VjYW1hdGFuPGJyPlBlcmlvZGUgJHtmb3JtYXRUYW5nZ2FsSW5kb25lc2lhKHN0YXJ0RGF0ZSl9IHMvZCAke2Zvcm1hdFRhbmdnYWxJbmRvbmVzaWEoZW5kRGF0ZSl9YAogICAgICAgICAgICAgICAgOiBgUGVuZXJpbWFhbiBQYWphayAke25ta2VjfTxicj5QZXJpb2RlICR7Zm9ybWF0VGFuZ2dhbEluZG9uZXNpYShzdGFydERhdGUpfSBzL2QgJHtmb3JtYXRUYW5nZ2FsSW5kb25lc2lhKGVuZERhdGUpfWA7CgogICAgICAgICAgICBsZXQgY2hhcnRPcHRpb25zID0gewogICAgICAgICAgICAgICAgY2hhcnQ6IHsgdHlwZTogdGlwZUNoYXJ0LCBiYWNrZ3JvdW5kQ29sb3I6ICcjZmZmZmZmJywgc3R5bGU6IHsgZm9udEZhbWlseTogJ1NlZ29lIFVJLCBSb2JvdG8sIHNhbnMtc2VyaWYnIH0gfSwKICAgICAgICAgICAgICAgIGNvbG9yczogWycjNGU3OWE3JywnI2YyOGUyYicsJyM3NmI3YjInLCcjZTE1NzU5JywnIzU5YTE0ZicsJyNlZGM5NDknXSwgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIHRpdGxlOiB7CiAgICAgICAgICAgICAgICAgICAgdXNlSFRNTDogdHJ1ZSwKICAgICAgICAgICAgICAgICAgICB0ZXh0OiBjanVkdWwsCiAgICAgICAgICAgICAgICAgICAgc3R5bGU6IHsgZm9udFNpemU6ICcxNHB4JywgZm9udFdlaWdodDogJ2JvbGQnLCBjb2xvcjogJyMwMDgwOWQnLCBsaW5lSGVpZ2h0OiAnMS40ZW0nIH0KICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICBjcmVkaXRzOiB7IGVuYWJsZWQ6IGZhbHNlIH0sCiAgICAgICAgICAgICAgICB0b29sdGlwOiB7fSwKICAgICAgICAgICAgICAgIHBsb3RPcHRpb25zOiB7fQogICAgICAgICAgICB9OwoKICAgICAgICAgICAgaWYgKHRpcGVDaGFydCA9PT0gJ3BpZScpIHsKICAgICAgICAgICAgICAgIGxldCBzZXJpZXNEYXRhID0gW107CiAgICAgICAgICAgICAgICBuYW1hR3JvdXAuZm9yRWFjaCgobm0sIGkpID0+IHsKICAgICAgICAgICAgICAgICAgICBzZXJpZXNEYXRhLnB1c2goeyBuYW1lOiBubSwgeTogcG9rb2tbaV0gKyBkZW5kYVtpXSB9KTsKICAgICAgICAgICAgICAgIH0pOwoKICAgICAgICAgICAgICAgIGNoYXJ0T3B0aW9ucy5zZXJpZXMgPSBbeyBuYW1lOidUb3RhbCBQYWphaycsIGNvbG9yQnlQb2ludDp0cnVlLCBkYXRhOnNlcmllc0RhdGEgfV07CiAgICAgICAgICAgICAgICBjaGFydE9wdGlvbnMucGxvdE9wdGlvbnMucGllID0gewogICAgICAgICAgICAgICAgICAgIGFsbG93UG9pbnRTZWxlY3Q6IHRydWUsCiAgICAgICAgICAgICAgICAgICAgY3Vyc29yOiAncG9pbnRlcicsCiAgICAgICAgICAgICAgICAgICAgc2hvd0luTGVnZW5kOiB0cnVlLAogICAgICAgICAgICAgICAgICAgIGRhdGFMYWJlbHM6IHsgZW5hYmxlZDp0cnVlLCBmb3JtYXQ6JzxiPntwb2ludC5uYW1lfTwvYj48YnI+e3BvaW50Lnk6LC4wZn0gKHtwb2ludC5wZXJjZW50YWdlOi4xZn0lKScgfQogICAgICAgICAgICAgICAgfTsKICAgICAgICAgICAgICAgIGNoYXJ0T3B0aW9ucy50b29sdGlwLmZvcm1hdHRlciA9IGZ1bmN0aW9uKCkgewogICAgICAgICAgICAgICAgICAgIHJldHVybiBgPGI+JHt0aGlzLnBvaW50Lm5hbWV9PC9iPjxici8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUb3RhbDogPGI+JHtIaWdoY2hhcnRzLm51bWJlckZvcm1hdCh0aGlzLnBvaW50LnksMCwnLCcsJy4nKX08L2I+PGJyLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICgke0hpZ2hjaGFydHMubnVtYmVyRm9ybWF0KHRoaXMucG9pbnQucGVyY2VudGFnZSwxKX0lKWA7CiAgICAgICAgICAgICAgICB9OwoKICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIGNoYXJ0T3B0aW9ucy54QXhpcyA9IHsgY2F0ZWdvcmllczogbmFtYUdyb3VwIH07CiAgICAgICAgICAgICAgICBjaGFydE9wdGlvbnMueUF4aXMgPSB7IG1pbjowLCB0aXRsZTp7IHRleHQ6J0p1bWxhaCAoUnApJywgc3R5bGU6eyBmb250V2VpZ2h0Oidib2xkJyB9IH0gfTsKICAgICAgICAgICAgICAgIGNoYXJ0T3B0aW9ucy5zZXJpZXMgPSBbCiAgICAgICAgICAgICAgICAgICAgeyBuYW1lOidQb2tvaycsIGRhdGE6cG9rb2sgfSwKICAgICAgICAgICAgICAgICAgICB7IG5hbWU6J0RlbmRhJywgZGF0YTpkZW5kYSB9CiAgICAgICAgICAgICAgICBdOwogICAgICAgICAgICAgICAgY2hhcnRPcHRpb25zLnBsb3RPcHRpb25zLnNlcmllcyA9IHsKICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6IDQsCiAgICAgICAgICAgICAgICAgICAgc3RhY2tpbmc6ICdub3JtYWwnLAogICAgICAgICAgICAgICAgICAgIGRhdGFMYWJlbHM6IHsgZW5hYmxlZDp0cnVlLCBmb3JtYXR0ZXI6ZnVuY3Rpb24oKXsgcmV0dXJuIEhpZ2hjaGFydHMubnVtYmVyRm9ybWF0KHRoaXMueSwwLCcsJywnLicpOyB9IH0KICAgICAgICAgICAgICAgIH07CiAgICAgICAgICAgICAgICBjaGFydE9wdGlvbnMudG9vbHRpcC5mb3JtYXR0ZXIgPSBmdW5jdGlvbigpIHsKICAgICAgICAgICAgICAgICAgICBjb25zdCBpbmRleCA9IHRoaXMucG9pbnQuaW5kZXg7CiAgICAgICAgICAgICAgICAgICAgY29uc3QgcG9rb2tWYWx1ZSA9IHBva29rW2luZGV4XSB8fCAwOwogICAgICAgICAgICAgICAgICAgIGNvbnN0IGRlbmRhVmFsdWUgPSBkZW5kYVtpbmRleF0gfHwgMDsKICAgICAgICAgICAgICAgICAgICBjb25zdCB0b3RhbCA9IHBva29rVmFsdWUgKyBkZW5kYVZhbHVlOwoKICAgICAgICAgICAgICAgICAgICByZXR1cm4gYDxwIHN0eWxlPSJjb2xvcjojMDA3MDc0OyBmb250LXdlaWdodDpib2xkOyBtYXJnaW46MDsiPiR7dGhpcy5wb2ludC5jYXRlZ29yeX08L3A+PGJyLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIFBva29rICA6IDxiIHN0eWxlPSJjb2xvcjojNGU3OWE3OyI+JHtIaWdoY2hhcnRzLm51bWJlckZvcm1hdChwb2tva1ZhbHVlLDAsJywnLCcuJyl9PC9iPjxici8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBEZW5kYSAgOiA8YiBzdHlsZT0iY29sb3I6I2UxNTc1OTsiPiR7SGlnaGNoYXJ0cy5udW1iZXJGb3JtYXQoZGVuZGFWYWx1ZSwwLCcsJywnLicpfTwvYj48YnIvPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgVG90YWwgIDogPGIgc3R5bGU9ImNvbG9yOiMyY2EwMmM7Ij4ke0hpZ2hjaGFydHMubnVtYmVyRm9ybWF0KHRvdGFsLDAsJywnLCcuJyl9PC9iPmA7CiAgICAgICAgICAgICAgICB9OwogICAgICAgICAgICB9CgogICAgICAgICAgICBIaWdoY2hhcnRzLmNoYXJ0KCdjb250YWluZXItcG90ZW5zaScsIGNoYXJ0T3B0aW9ucyk7CgogICAgICAgICAgICAvLyBUYW1waWxrYW4gbGlzdCBrZWNhbWF0YW4gKyBqdW1sYWggcG90ZW5zaQogICAgICAgICAgICAgIGxldCBodG1sTGlzdCA9ICI8dGFibGU+IjsKICAgICAgICAgICAgICBodG1sTGlzdCArPSAiPHRoZWFkPjx0cj48dGg+IiArIGluc3RhbnNpICsgIjwvdGg+PHRoIHN0eWxlPSd0ZXh0LWFsaWduOmNlbnRlcjsnPlBPS09LPC90aD48dGggc3R5bGU9J3RleHQtYWxpZ246Y2VudGVyOyc+REVOREE8L3RoPjx0aCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz5KVU1MQUg8L3RoPjwvdHI+PC90aGVhZD48dGJvZHk+IjsKICAgICAgICAgICAgICAKICAgICAgICAgICAgICBsZXQgdG90YWxQb2tvayA9IDA7CiAgICAgICAgICAgICAgbGV0IHRvdGFsRGVuZGEgPSAwOwogICAgICAgICAgICAgIGxldCB0b3RhbFNlbXVhID0gMDsKICAgICAgICAgICAgICBmb3IgKGxldCBpID0gMDsgaSA8IG5hbWFHcm91cC5sZW5ndGg7IGkrKykgewogICAgICAgICAgICAgICAgICBsZXQgcG9rb2tWYWwgPSBwb2tva1tpXSB8fCAwOwogICAgICAgICAgICAgICAgICBsZXQgZGVuZGFWYWwgPSBkZW5kYVtpXSB8fCAwOwogICAgICAgICAgICAgICAgICBsZXQgdG90YWwgICAgPSBwb2tva1ZhbCArIGRlbmRhVmFsOwoKICAgICAgICAgICAgICAgICAgICAgIHRvdGFsUG9rb2sgKz0gcG9rb2tWYWw7CiAgICAgICAgICAgICAgICAgICAgICB0b3RhbERlbmRhICs9IGRlbmRhVmFsOwogICAgICAgICAgICAgICAgICAgICAgdG90YWxTZW11YSArPSB0b3RhbDsKCiAgICAgICAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8dHI+IjsKICAgICAgICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0ZD4iICsgY2FwaXRhbGl6ZVdvcmRzKG5hbWFHcm91cFtpXSkgKyAiPC90ZD4iOwogICAgICAgICAgICAgICAgICBodG1sTGlzdCArPSAiPHRkIGNsYXNzPSdudW0nIHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0Oyc+IiArIHBva29rVmFsLnRvTG9jYWxlU3RyaW5nKCdpZC1JRCcpICsgIjwvdGQ+IjsKICAgICAgICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0ZCBjbGFzcz0nbnVtJyBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDsnPiIgKyBkZW5kYVZhbC50b0xvY2FsZVN0cmluZygnaWQtSUQnKSArICI8L3RkPiI7CiAgICAgICAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8dGQgY2xhc3M9J251bScgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7Jz4iICsgdG90YWwudG9Mb2NhbGVTdHJpbmcoJ2lkLUlEJykgKyAiPC90ZD4iOwogICAgICAgICAgICAgICAgICBodG1sTGlzdCArPSAiPC90cj4iOwogICAgICAgICAgICB9CgogICAgICAgICAgICAvLyBUYW1iYWhrYW4gYmFyaXMgdG90YWwKICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0ciBzdHlsZT0nZm9udC13ZWlnaHQ6Ym9sZDsgYmFja2dyb3VuZDojZDhhMjVlOyc+IjsKICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0ZCBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7Jz48Yj5UT1RBTDwvYj48L3RkPiI7CiAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8dGQgY2xhc3M9J251bScgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7Jz48Yj4iICsgdG90YWxQb2tvay50b0xvY2FsZVN0cmluZygnaWQtSUQnKSArICI8L2I+PC90ZD4iOwogICAgICAgICAgICBodG1sTGlzdCArPSAiPHRkIGNsYXNzPSdudW0nIHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0Oyc+PGI+IiArIHRvdGFsRGVuZGEudG9Mb2NhbGVTdHJpbmcoJ2lkLUlEJykgKyAiPC9iPjwvdGQ+IjsKICAgICAgICAgICAgaHRtbExpc3QgKz0gIjx0ZCBjbGFzcz0nbnVtJyBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDsnPjxiPiIgKyB0b3RhbFNlbXVhLnRvTG9jYWxlU3RyaW5nKCdpZC1JRCcpICsgIjwvYj48L3RkPiI7CiAgICAgICAgICAgIGh0bWxMaXN0ICs9ICI8L3RyPiI7CgoKICAgICAgICAgICAgaHRtbExpc3QgKz0gIjwvdGJvZHk+PC90YWJsZT4iOwogICAgICAgICAgICAkKCcjbGlzdC1wb3RlbnNpJykuaHRtbChodG1sTGlzdCk7CiAgICAgICAgfSwKCiAgICAgICAgY29tcGxldGU6IGZ1bmN0aW9uKCl7IAogICAgICAgICAgICAkKCcjbG9hZGluZy1zcGlubmVyJykuaGlkZSgpOyAKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInBvcHVwUGVuZXJpbWFhbiIpLnN0eWxlLmRpc3BsYXkgPSAibm9uZSI7CiAgICAgICAgICAgIGdldF9lZmVrdGl2aXRhcygpOwogICAgICAgIH0sCiAgICAgICAgZXJyb3I6IGZ1bmN0aW9uKCl7IAogICAgICAgICAgICAkKCcjY29udGFpbmVyLXBvdGVuc2knKS5odG1sKCI8cCBzdHlsZT0nY29sb3I6cmVkO3RleHQtYWxpZ246Y2VudGVyOyc+R2FnYWwgbWVtdWF0IGRhdGE8L3A+Iik7IAogICAgICAgIH0KICAgIH0pOwoKICAgIAp9CgpmdW5jdGlvbiBjYXBpdGFsaXplV29yZHMoc3RyKSB7CiAgICByZXR1cm4gc3RyCiAgICAgICAgLnRvTG93ZXJDYXNlKCkKICAgICAgICAucmVwbGFjZSgvXGJcdy9nLCBjaGFyID0+IGNoYXIudG9VcHBlckNhc2UoKSk7Cn0KCgoKZnVuY3Rpb24gZm9ybWF0VGFuZ2dhbEluZG9uZXNpYShkYXRlU3RyKSB7CiAgICBjb25zdCBidWxhbiA9IFsiSmFudWFyaSIsIkZlYnJ1YXJpIiwiTWFyZXQiLCJBcHJpbCIsIk1laSIsIkp1bmkiLAogICAgICAgICAgICAgICAgICAgIkp1bGkiLCJBZ3VzdHVzIiwiU2VwdGVtYmVyIiwiT2t0b2JlciIsIk5vdmVtYmVyIiwiRGVzZW1iZXIiXTsKICAgIGNvbnN0IGQgPSBuZXcgRGF0ZShkYXRlU3RyKTsKICAgIGNvbnN0IGhhcmkgPSBkLmdldERhdGUoKTsKICAgIGNvbnN0IGJsbiA9IGJ1bGFuW2QuZ2V0TW9udGgoKV07CiAgICBjb25zdCB0aG4gPSBkLmdldEZ1bGxZZWFyKCk7CiAgICByZXR1cm4gYCR7aGFyaX0gJHtibG59ICR7dGhufWA7Cn0KCgoJZnVuY3Rpb24gZ2V0X2VmZWt0aXZpdGFzKCl7CgkJCSQuYWpheCh7ICAKCQkJCSAgdXJsOiAnZGFzaGJvYXJkLWVmZWt0aXZpdGFzL2dldCcsCgkJCQkgIHR5cGU6ICdQT1NUJywKCQkJCSAgc3VjY2VzczogZnVuY3Rpb24oZGF0YSl7CgkJCQkJJCgiI2RhdGEtaGVhZGVyIikuaHRtbChkYXRhKTsKCQkJCSAgIAoJCQkJICB9CgkJCQl9KTsJCgkJCgkJfQoKCg=="))
+
+	
+  $(window).on('load', function () {
+  		$(function () {
+	  		$('[data-toggle="tooltip"]').tooltip();
+       
+			 
+		});
+				// Treeview Initialization
+		$(document).ready(function() {
+      
+		//  get_potensi_kecamatan();
+      document.getElementById("popupPenerimaan").style.display = "none";	
+		  $('.treeview-animated').mdbTreeview();
+		 
+		});
+
+	});
+
+
+	$(document).ready(function () {
+    
+     get_potensi_kecamatan();
+      $(function(){
+					$("#start_date").datepicker({
+						format: "dd-mm-yyyy",   
+						autoclose: true
+					});
+				});
+
+				$(function(){
+					$("#end_date").datepicker({
+						format: "dd-mm-yyyy",   
+						autoclose: true
+					});
+				});
+
+
+	});	
+
+
+   function showPopupKecamatan(kec) {
+
+      $.ajax({
+        url: 'master-mkecamatan-get/' + encodeURIComponent(kec),
+        type: 'POST',
+        dataType: "json",
+        success: function(data){
+          document.getElementById("popupImage").src = "data:image/jpeg;base64," + data.foto;
+          document.getElementById("popupNama").innerText   = "KECAMATAN "+data.nm_kecamatan;
+          document.getElementById("popupAlamat").innerText = data.alamat;
+          document.getElementById("popupTelp").innerText   = data.telp;
+          document.getElementById("popupKdkec").innerText   = data.kd_kecamatan;
+          document.getElementById("popupKecamatan").style.display = "flex";
+
+
+          document.getElementById("dataImage").src = "data:image/jpeg;base64," + data.foto;
+          document.getElementById("dataNama").innerText   = "KECAMATAN "+data.nm_kecamatan;
+          document.getElementById("dataAlamat").innerText = data.alamat;
+          document.getElementById("dataTelp").innerText   = data.telp;
+          document.getElementById("dataKdkec").innerText   = data.kd_kecamatan;
+         
+
+
+        },
+        error: function(xhr){
+          console.error(xhr.responseText);
+        }
+      });
+
+    }
+
+    
+
+    function closePopup() {
+      document.getElementById("popupKecamatan").style.display = "none";
+      document.getElementById("popupPenerimaan").style.display = "none";
+
+    }
+
+    function showPeriode() {
+      document.getElementById("popupKecamatan").style.display = "none";
+      document.getElementById("popupPenerimaan").style.display = "flex";
+
+
+    }
+
+
+
+
+function get_potensi_kecamatan() {
+    var el = document.getElementById("popupKdkec").innerText;
+    var nmkec = document.getElementById("popupNama").innerText;
+      nmkec = nmkec
+        .toLowerCase()
+        .replace(/\b\w/g, function(l) { return l.toUpperCase(); });
+
+      document.getElementById("lbpanel").innerText = "Potensi Wajib Pajak";  
+      document.getElementById("popupNama").innerText = nmkec;
+      // $('#loading-spinner-popup').show();
+
+      if (el !==''){
+          var kec = el.slice(-3);
+          var nmkec=nmkec;
+          $('#div-data-kecamatan').show();
+          $('#div-table-kecamatan').hide();
+      }else{
+          kec = '000';
+          nmkec ='';
+          $('#div-data-kecamatan').hide();
+          $('#div-table-kecamatan').show();
+      }
+    
+    $('#loading-spinner').show();
+    $('#container-potensi').empty();
+
+
+    if(kec=='000'){
+      instansi='KECAMATAN';
+    }else{
+      instansi='KELURAHAN';
+    }
+
+ 
+      $.ajax({
+        url: 'chart-potensi/get/' + encodeURIComponent(kec),
+        type: 'POST',
+        success: function (data) {
+            var out       = jQuery.parseJSON(data);
+            var namaGroup = out.group;
+            var progres   = out.potensi;
+
+            var pieData = [];
+            for (var i = 0; i < namaGroup.length; i++) {
+                pieData.push({
+                    name: namaGroup[i],
+                    y: parseFloat(progres[i]) || 0
+                });
+            }
+
+            Highcharts.setOptions({
+                colors: ['#1f77b4', '#2ca02c', '#ff7f0e', '#d62728',
+                        '#9467bd', '#8c564b', '#e377c2', '#7f7f7f',
+                        '#bcbd22', '#17becf']
+            });
+            var instansiFormatted = instansi.charAt(0).toUpperCase() + instansi.slice(1).toLowerCase();
+
+                Highcharts.chart('container-potensi', {
+                    chart: { 
+                        type: 'pie',
+                        events: {
+                            render: function () {
+                                var chart = this;
+                                var total = pieData.reduce((sum, item) => sum + item.y, 0);
+
+                                // Hapus label lama kalau ada
+                                if (chart.customLabel) {
+                                    chart.customLabel.destroy();
+                                }
+
+                                // Tambahkan label di tengah donat
+                                chart.customLabel = chart.renderer.text(
+                                    '<div style="text-align:center;">' +
+                                        '<span style="font-size:12px; color:#f22f42;">Total</span><br>' +
+                                        '<span style="font-size:14px; font-weight:bold; color:#00809D;">' +
+                                        Highcharts.numberFormat(total, 0, ',', '.') +
+                                        '</span>' +
+                                    '</div>',
+                                    chart.plotLeft + chart.plotWidth / 2,
+                                    chart.plotTop + chart.plotHeight / 2
+                                )
+                                .attr({
+                                    align: 'center',
+                                    zIndex: 5,
+                                    useHTML: true
+                                })
+                                .add();
+                            }
+                        }
+                    },
+                    title: { 
+                        text: nmkec + '<br>Potensi Wajib Pajak ' + instansiFormatted, 
+                        style: {
+                            fontSize: '16px',
+                            fontWeight: 'bold',
+                            color: '#00809D'
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '{point.percentage:.1f}% ({point.y})'
+                    },
+                    accessibility: {
+                        point: { valueSuffix: '%' }
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            innerSize: '55%', // donat lebih tebal
+                            dataLabels: {
+                                enabled: true,
+                                format: '{point.name}: {point.percentage:.1f}%'
+                            }
+                        }
+                    },
+                    credits: { enabled: false },
+                    series: [{
+                        name: 'POTENSI WAJIB PAJAK',
+                        colorByPoint: true,
+                        data: pieData
+                    }]
+                });
+
+
+
+            // Tampilkan list kecamatan + jumlah potensi
+            var htmlList = "<table>";
+            htmlList += "<thead ><tr><th>"+instansi+" </th><th style='text-align:center;'>POTENSI</th></tr></thead><tbody>";
+            let totalProgres = 0;
+            for (var i = 0; i < namaGroup.length; i++) {
+               
+              let progresVal = progres[i] || 0;
+                  totalProgres += progresVal;
+
+                htmlList += "<tr>";
+                htmlList += "<td>" + capitalizeWords(instansi)+" " +capitalizeWords(namaGroup[i]) + "</td>";
+                htmlList += "<td class='num'>" +  ( (progres[i] || 0).toLocaleString('id-ID') )  + "</td>";
+                htmlList += "</tr>";
+
+                
+            }
+
+         //   Tambahkan baris total
+            htmlList += "<tr style='font-weight:bold; background:#d8a25e;'>";
+            htmlList += "<td style='text-align:center;'><b>TOTAL</b></td>";
+            htmlList += "<td class='num' style='text-align:center;'><b>" + totalProgres.toLocaleString('id-ID') + "</b></td>";
+            htmlList += "</tr>";            
+
+            htmlList += "</tbody></table>";
+            $('#list-potensi').html(htmlList);
+
+
+        },
+        complete: function () {
+           
+            $('#loading-spinner').hide();
+            closePopup();
+            get_efektivitas();
+
+        },
+        error: function () {
+            $('#container-potensi').html("<p style='color:red;text-align:center;'>Gagal memuat data</p>");
+        }
+    });
+}
+
+function formatToYMD(dateStr) {
+  const parts = dateStr.split('-'); 
+  const d = new Date(parts[2], parts[1] - 1, parts[0]); // (Y, M-1, D)
+
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
+}
+
+
+
+function get_penerimaan_kecamatan() {
+    const _startDate = document.getElementById('start_date').value;
+    const _endDate   = document.getElementById('end_date').value;
+    const startDate  = formatToYMD(_startDate);
+    const endDate    = formatToYMD(_endDate);
+
+    let el    = document.getElementById("popupKdkec").innerText || "";
+    let nmkec = (document.getElementById("popupNama").innerText || "")
+        .toLowerCase()
+        .replace(/\b\w/g, l => l.toUpperCase());
+    document.getElementById("lbpanel").innerText = "Realisasi Penerimaan Pajak"; 
+    document.getElementById("popupNama").innerText = nmkec;
+
+    let kec = "000";
+    if (el.trim() !== "" && el.length >= 3) {
+        kec = el.slice(-3);
+        $('#div-data-kecamatan').show();
+        $('#div-table-kecamatan').hide();
+    } else {
+        nmkec = "";
+        $('#div-data-kecamatan').hide();
+        $('#div-table-kecamatan').show();
+    }
+
+    $('#loading-spinner').show();
+    $('#container-potensi').empty();
+
+    const instansi  = (kec === "000") ? "KECAMATAN" : "KELURAHAN";
+    const tipeChart = 'column';
+
+    $.ajax({
+        url: 'chart-penerimaan/get/' + encodeURIComponent(kec),
+        type: 'POST',
+        data: { startDate, endDate },
+        success: function (data) {
+            let out = {};
+            try {
+                out = jQuery.parseJSON(data) || {};
+            } catch (e) {
+                console.error('JSON parse error:', e, data);
+                $('#container-potensi').html("<p style='color:red;text-align:center;'>Data tidak Ditemukan</p>");
+                return;
+            }
+
+            const namaGroup = out.group || [];
+            const pokok     = (out.pokok || []).map(v => v || 0);
+            const denda     = (out.denda || []).map(v => v || 0);
+
+            if (!namaGroup.length) {
+                $('#container-potensi').html(`
+                    <div class="alert alert-info alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <center><b>Informasi</b> Tidak ditemukan data untuk periode ini</center>
+                    </div>
+                `);
+                return;
+            }
+
+            const cjudul = (kec === '000') 
+                ? `Penerimaan pajak per kecamatan<br>Periode ${formatTanggalIndonesia(startDate)} s/d ${formatTanggalIndonesia(endDate)}`
+                : `Penerimaan Pajak ${nmkec}<br>Periode ${formatTanggalIndonesia(startDate)} s/d ${formatTanggalIndonesia(endDate)}`;
+
+            let chartOptions = {
+                chart: { type: tipeChart, backgroundColor: '#ffffff', style: { fontFamily: 'Segoe UI, Roboto, sans-serif' } },
+                colors: ['#4e79a7','#f28e2b','#76b7b2','#e15759','#59a14f','#edc949'],               
+                title: {
+                    useHTML: true,
+                    text: cjudul,
+                    style: { fontSize: '14px', fontWeight: 'bold', color: '#00809d', lineHeight: '1.4em' }
+                },
+                credits: { enabled: false },
+                tooltip: {},
+                plotOptions: {}
+            };
+
+            if (tipeChart === 'pie') {
+                let seriesData = [];
+                namaGroup.forEach((nm, i) => {
+                    seriesData.push({ name: nm, y: pokok[i] + denda[i] });
+                });
+
+                chartOptions.series = [{ name:'Total Pajak', colorByPoint:true, data:seriesData }];
+                chartOptions.plotOptions.pie = {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    showInLegend: true,
+                    dataLabels: { enabled:true, format:'<b>{point.name}</b><br>{point.y:,.0f} ({point.percentage:.1f}%)' }
+                };
+                chartOptions.tooltip.formatter = function() {
+                    return `<b>${this.point.name}</b><br/>
+                            Total: <b>${Highcharts.numberFormat(this.point.y,0,',','.')}</b><br/>
+                            (${Highcharts.numberFormat(this.point.percentage,1)}%)`;
+                };
+
+            } else {
+                chartOptions.xAxis = { categories: namaGroup };
+                chartOptions.yAxis = { min:0, title:{ text:'Jumlah (Rp)', style:{ fontWeight:'bold' } } };
+                chartOptions.series = [
+                    { name:'Pokok', data:pokok },
+                    { name:'Denda', data:denda }
+                ];
+                chartOptions.plotOptions.series = {
+                    borderRadius: 4,
+                    stacking: 'normal',
+                    dataLabels: { enabled:true, formatter:function(){ return Highcharts.numberFormat(this.y,0,',','.'); } }
+                };
+                chartOptions.tooltip.formatter = function() {
+                    const index = this.point.index;
+                    const pokokValue = pokok[index] || 0;
+                    const dendaValue = denda[index] || 0;
+                    const total = pokokValue + dendaValue;
+
+                    return `<p style="color:#007074; font-weight:bold; margin:0;">${this.point.category}</p><br/>
+                            Pokok  : <b style="color:#4e79a7;">${Highcharts.numberFormat(pokokValue,0,',','.')}</b><br/>
+                            Denda  : <b style="color:#e15759;">${Highcharts.numberFormat(dendaValue,0,',','.')}</b><br/>
+                            Total  : <b style="color:#2ca02c;">${Highcharts.numberFormat(total,0,',','.')}</b>`;
+                };
+            }
+
+            Highcharts.chart('container-potensi', chartOptions);
+
+            // Tampilkan list kecamatan + jumlah potensi
+              let htmlList = "<table>";
+              htmlList += "<thead><tr><th>" + instansi + "</th><th style='text-align:center;'>POKOK</th><th style='text-align:center;'>DENDA</th><th style='text-align:center;'>JUMLAH</th></tr></thead><tbody>";
+              
+              let totalPokok = 0;
+              let totalDenda = 0;
+              let totalSemua = 0;
+              for (let i = 0; i < namaGroup.length; i++) {
+                  let pokokVal = pokok[i] || 0;
+                  let dendaVal = denda[i] || 0;
+                  let total    = pokokVal + dendaVal;
+
+                      totalPokok += pokokVal;
+                      totalDenda += dendaVal;
+                      totalSemua += total;
+
+                  htmlList += "<tr>";
+                  htmlList += "<td>" + capitalizeWords(namaGroup[i]) + "</td>";
+                  htmlList += "<td class='num' style='text-align:right;'>" + pokokVal.toLocaleString('id-ID') + "</td>";
+                  htmlList += "<td class='num' style='text-align:right;'>" + dendaVal.toLocaleString('id-ID') + "</td>";
+                  htmlList += "<td class='num' style='text-align:right;'>" + total.toLocaleString('id-ID') + "</td>";
+                  htmlList += "</tr>";
+            }
+
+            // Tambahkan baris total
+            htmlList += "<tr style='font-weight:bold; background:#d8a25e;'>";
+            htmlList += "<td style='text-align:center;'><b>TOTAL</b></td>";
+            htmlList += "<td class='num' style='text-align:right;'><b>" + totalPokok.toLocaleString('id-ID') + "</b></td>";
+            htmlList += "<td class='num' style='text-align:right;'><b>" + totalDenda.toLocaleString('id-ID') + "</b></td>";
+            htmlList += "<td class='num' style='text-align:right;'><b>" + totalSemua.toLocaleString('id-ID') + "</b></td>";
+            htmlList += "</tr>";
+
+
+            htmlList += "</tbody></table>";
+            $('#list-potensi').html(htmlList);
+        },
+
+        complete: function(){ 
+            $('#loading-spinner').hide(); 
+            document.getElementById("popupPenerimaan").style.display = "none";
+            get_efektivitas();
+        },
+        error: function(){ 
+            $('#container-potensi').html("<p style='color:red;text-align:center;'>Gagal memuat data</p>"); 
+        }
+    });
+
+    
+}
+
+function capitalizeWords(str) {
+    return str
+        .toLowerCase()
+        .replace(/\b\w/g, char => char.toUpperCase());
+}
+
+
+
+function formatTanggalIndonesia(dateStr) {
+    const bulan = ["Januari","Februari","Maret","April","Mei","Juni",
+                   "Juli","Agustus","September","Oktober","November","Desember"];
+    const d = new Date(dateStr);
+    const hari = d.getDate();
+    const bln = bulan[d.getMonth()];
+    const thn = d.getFullYear();
+    return `${hari} ${bln} ${thn}`;
+}
+
+
+	function get_efektivitas(){
+			$.ajax({  
+				  url: 'dashboard-efektivitas/get',
+				  type: 'POST',
+				  success: function(data){
+					$("#data-header").html(data);
+				   
+				  }
+				});	
+		
+		}
+
+
