@@ -458,17 +458,16 @@ function formatTanggalIndonesia(dateStr) {
     return `${hari} ${bln} ${thn}`;
 }
 
-
-	function get_efektivitas(){
-			$.ajax({  
-				  url: 'dashboard-efektivitas/get',
-				  type: 'POST',
-				  success: function(data){
-					$("#data-header").html(data);
-				   
-				  }
-				});	
-		
-		}
+function get_efektivitas(){
+        $.ajax({  
+                url: 'dashboard-efektivitas/get',
+                type: 'POST',
+                success: function(data){
+                $("#data-header").html(data);
+                
+                }
+            });	
+    
+    }
 
 
