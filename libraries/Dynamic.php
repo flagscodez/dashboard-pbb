@@ -1,17 +1,4 @@
-<?php
 
-class Dynamic {
-    private $ci;                // for CodeIgniter Super Global Reference.
-    private $id_menu        = 'id="menu"';
-    private $class_menu     = 'class="menu"';
-    private $class_notif     = 'class="notification-item"';
-    private $class_parent   = 'class="parent"';
-    private $class_last     = 'class="last"';
-    // --------------------------------------------------------------------
-    /**
-     * PHP5        Constructor
-     *
-     */
     function __construct()
     {
         $this->ci =& get_instance();    // get a reference to CodeIgniter.
@@ -467,9 +454,3 @@ class Dynamic {
 		
 	}	
 	
-}
-// ------------------------------------------------------------------------
-// End of Dynamic_menu Library Class.
-// ------------------------------------------------------------------------
-/* End of file Dynamic_menu.php */
-/* Location: ../application/libraries/Dynamic_menu.php */  
