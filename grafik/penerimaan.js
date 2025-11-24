@@ -28,6 +28,12 @@ $(window).on('load', function () {
 					allowClear: true,
 					width: '100%'   // supaya full lebar
 				});
+
+				$('#tipe_chart').on('change', function() {
+					let kec = $('#kecamatan').val();
+					get_penerimaan_kecamatan(kec);
+				})
+
 			});
 		});
 
@@ -42,11 +48,6 @@ $(window).on('load', function () {
 		});
 	});	
 
-
-	$('#tipe_chart').on('change', function() {
-		let kec = $('#kecamatan').val();
-		get_penerimaan_kecamatan(kec);
-	})
 
 	$('#btn-tampil').on('click', function() {
 		let kec = $('#kecamatan').val();
@@ -454,7 +455,6 @@ function get_penerimaan_kecamatan(kec) {
 		}
 	});
 }
-
 
 
     function formatTanggalIndonesia(dateStr) {

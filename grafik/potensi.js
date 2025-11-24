@@ -19,6 +19,13 @@ $(window).on('load', function () {
 			var kec = $(this).val();
 			get_potensi_kecamatan(kec);
 		});
+
+
+        $('#tipe_chart').on('change', function() {
+            let kec = $('#kecamatan').val();
+            get_potensi_kecamatan(kec);
+        });
+
 	});	
 
 
@@ -176,12 +183,6 @@ function get_penerimaan_kecamatan(kec) {
         }
     });
 }
-
-
-$('#tipe_chart').on('change', function() {
-    let kec = $('#kecamatan').val();
-    get_potensi_kecamatan(kec);
-});
 
 
 
